@@ -1,6 +1,6 @@
 import * as React from 'rax';
 
-import './index.less';
+import styles from './index.less';
 
 interface DemoPropsInfo{
     data:{
@@ -26,6 +26,6 @@ export default class Demo extends React.Component<DemoPropsInfo,StateInfo>{
 
 
     render(){
-        return(<div className={"bg"}><div className={"box"}/>{this.props.data.name}</div>);
+        return(<div style={styles.bg}><div style={styles.box}/>{this.props.data.name}</div>);
     }
 }
